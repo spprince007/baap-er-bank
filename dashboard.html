@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-6 mx-auto justify-center">
+        <h1 class="text-5xl	text-center">Welcome to <span class="text-sky-500 font-semibold">Baper Bank</span></h1>
+    </header>
+    <main>
+        <section>
+            <dev class="grid grid-cols-3 gap-4 mx-auto w-9/12 mt-8 text-white">
+                <div class="bg-violet-600 p-4 rounded-md text-center">
+                    <h2 class="text-2xl">Dipsite</h2>
+                    <h3 class="text-3xl">$<span id="total-deposite">00</span></h3>
+                </div>
+                <div class="bg-orange-600 p-4 rounded-md text-center">
+                    <h2 class="text-2xl">Withdorw</h2>
+                    <h3 class="text-3xl">$<span id="total-withdrow">00</h3>
+                </div>
+                <div class="bg-sky-600 p-4 rounded-md text-center">
+                    <h2 class="text-2xl">Blance</h2>
+                    <h3 class="text-3xl">$<span id="previous-blance">00</h3>
+                </div>
+            </dev>
+
+        </section>
+        <section>
+            <dev class="grid grid-cols-2 gap-4 mx-auto w-9/12 mt-12">
+                <div class="bg-blue-600 p-4 rounded-md">
+                    <h2 class="text-2xl mb-3 text-white">Please Dipsite</h2>
+                    <input class="block mb-2 py-2 px-3 w-9/12 rounded-md" type="text" name="" id="diposite-tk"
+                        placeholder="put your amount">
+                    <button id="diposite-btn"
+                        class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-md text-white">Submit</button>
+                </div>
+                <div class="bg-emerald-600 p-4 rounded-md ">
+                    <h2 class="text-2xl mb-3 text-white">Please Withdorw</h2>
+                    <input class="block mb-2 py-2 px-3 w-9/12 rounded-md" type="text" name="" id="withdrow-tk"
+                        placeholder="put your amount">
+                    <button id="withdrow-btn"
+                        class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-md text-white">Submit</button>
+                </div>
+            </dev>
+        </section>
+    </main>
+    <script src="blance.js"></script>
+    <script src="withdrow.js"></script>
+</body>
+
+</html>
